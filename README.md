@@ -1,4 +1,5 @@
 # louisville_real_estate
 
 ## Datasets
-Data by zip code: https://www.realtor.com/research/data/
+Owned homes data by zip code: https://www.realtor.com/research/data/
+Rental data by zip code: https://www.zillow.com/research/data/
