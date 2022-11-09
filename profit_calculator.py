@@ -37,7 +37,7 @@ def mortgage_calculator(price):
     principal = price*(1-down_payment)
     interest_monthly = .0725/12
     n = 30*12
-    return principal*(interest_monthly*(1 + interest_monthly)**n)/((1+interest_monthly)**n-1)
+    return principal*((interest_monthly*(1 + interest_monthly)**n)/((1+interest_monthly)**n-1))
 
 print("Estimated mortgage payment: ", f"{mortgage_calculator(house_listing_price):,.2f}")
 
@@ -65,13 +65,6 @@ rental_price = df.loc[df['RegionName'] == int(zip_code)]['9/30/2022'].iloc[0]
 print("Average rental price as of 10/31/2022: ", f"{(rental_price):,.2f}")
 
 #profit calculator
-profit = mortgage_calculator(house_listing_price) - rental_price
+profit = rental_price - mortgage_calculator(house_listing_price)
 
 print("Estimated monthly profit: ", f"{profit:,.2f}")
-
-
-xpoints = np.array(df.loc[:,'7/31/2019':'9/30/2022'].columns)
-ypoints = np.array(df.loc[df['RegionName'] == int(zip_code)]['9/30/2022'].iloc[0])
-
-plt.plot(xpoints, ypoints)
-plt.show()

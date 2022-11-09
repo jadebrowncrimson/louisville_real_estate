@@ -7,7 +7,8 @@ df = pd.read_csv('C:/Users/Jade/OneDrive - University of Louisville/Handling Bus
 zip_code = input("Enter a zip code")
 
 xpoints = np.array(df.loc[:,'7/31/2019':'9/30/2022'].columns)
-ypoints = np.array(df.loc[df['RegionName'] == int(zip_code)]['9/30/2022'].iloc[0])
+#ypoints = np.array(df.loc[df['RegionName'] == int(zip_code)]['9/30/2022'].iloc[0])
+ypoints = np.array(df.loc[df['RegionName'] == int(zip_code)])
 
 plt.plot(xpoints, ypoints)
 plt.show()
