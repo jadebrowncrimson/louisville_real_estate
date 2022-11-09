@@ -8,24 +8,17 @@ df.head()
 #filter for Louisville zip codes
 df = df[df['zip_name'].str.contains('louisville, KY')]
 
-#calculator
 #zip code input
 zip_code = input("Enter a zip code ")
 
-#casted postal_code to string
-series = df['postal_code']
-df['postal_code'] = df['postal_code'].astype(str)
-df = df[df['postal_code'].str.contains(zip_code)]
+# cast the postal code column to numeric type ('coerce' means convert any invalid cells to NaN)
+df['postal_code'] = pd.to_numeric(df['postal_code'], errors='coerce')
 
-print(type(df))
+# drop any values from the postal code column that are NaN or None
+df.dropna(axis=0, subset='postal_code', inplace=True)
 
-#retrieve median listing price
-#retrieve row index by referencing zip code
+# find the row where postal_code equals the user's input, then read the value of the median_listing_price column
+house_listing_price = df.loc[df['postal_code'] == int(zip_code)]['median_listing_price'].iloc[0]
 
+print(f"{(house_listing_price):,.2f}")
 
-average_listing_price = df['median_listing_price'].iloc[df['postal_code'].str.contains(zip_code)]
-
-#print average listing price
-print (average_listing_price)
-
-#print ("Average listing price: " + df[''])
