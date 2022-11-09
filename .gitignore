@@ -1,4 +1,4 @@
 #relative path for files you want to ignore
-./louisville_real_estate/housing*
-./louisville_real_estate/rentals*
-./louisville_real_estate/NOTES*
+housing.py
+rentals.py
+NOTES
