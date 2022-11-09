@@ -1,4 +1,4 @@
 #relative path for files you want to ignore
-'C:/Users/Jade/OneDrive - University of Louisville/Handling Business/Trainings/Code Louisville Python/Code/final_project/louisville_real_estate/housing.py')
-'C:/Users/Jade/OneDrive - University of Louisville/Handling Business/Trainings/Code Louisville Python/Code/final_project/louisville_real_estate/rentals.py')
-'C:/Users/Jade/OneDrive - University of Louisville/Handling Business/Trainings/Code Louisville Python/Code/final_project/louisville_real_estate/NOTES')
+./louisville_real_estate/housing.py')
+./louisville_real_estate/rentals.py')
+./louisville_real_estate/NOTES')
