@@ -26,7 +26,7 @@ You can run the files in any order. Below is a guide to how you should run each 
     2. Enter a zip code that is within the bounds of Louisville, KY (i.e., 40206).  
     3. The program will return various data points to help you begin to understand if this area is a good area to invest in from the perspective of a potential landlord.  
 
-3. visuals.py - 
+3. visuals.py
     1. Run the program (ctrl + f5)   
     2. A pie chart will pop up that shows how the average housing price in each zip code compares to the others in the grand scheme of the Louisville housing market.  
     3. Enter a zip code that is within the bounds of Louisville, KY (i.e., 40206).  
