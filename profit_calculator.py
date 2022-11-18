@@ -1,8 +1,7 @@
 
-import pandas  as pd
-import numpy as np
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
 
 #HOUSING DATA
 #data import
@@ -12,8 +11,9 @@ df.head()
 #filter for Louisville, KY zip codes
 df = df[df['zip_name'].str.contains('louisville, KY')]
 
+
 #zip code input
-zip_code = input("Enter a zip code ")
+zip_code = input("Enter a zip code in Louisville, KY")
 print("For zip code " + zip_code + ": ")
 
 # cast the postal code column to numeric type ('coerce' means convert any invalid cells to NaN)
@@ -22,10 +22,10 @@ df['postal_code'] = pd.to_numeric(df['postal_code'], errors='coerce')
 # drop any values from the postal code column that are NaN or None
 df.dropna(axis=0, subset='postal_code', inplace=True)
 
-# find the row where postal_code equals the user's input, then read the value of the median_listing_price column
-house_listing_price = df.loc[df['postal_code'] == int(zip_code)]['median_listing_price'].iloc[0]
+# find the row where postal_code equals the user's input, then read the value of the average_listing_price column
+house_listing_price = df.loc[df['postal_code'] == int(zip_code)]['average_listing_price'].iloc[0]
 
-print("Average median listing price: ", f"{(house_listing_price):,.2f}")
+print("Average listing price: ", f"{(house_listing_price):,.2f}")
 
 # mortgage calculator
 # down payment = 3.5%
@@ -51,18 +51,16 @@ df.head()
 df = df[df['StateName'].str.contains('KY')]
 df = df[df['City'].str.contains('Louisville')]
 
-#df.drop(df.loc[:,'3/31/2015':'6/30/2019'].columns, axis=1)
-
 # cast the postal code column to numeric type ('coerce' means convert any invalid cells to NaN)
 df['RegionName'] = pd.to_numeric(df['RegionName'], errors='coerce')
 
 # drop any values from the postal code column that are NaN or None
 df.dropna(axis=0, subset='RegionName', inplace=True)
 
-# find the row where postal_code equals the user's input, then read the value of the median_listing_price column
+# find the row where postal_code equals the user's input, then read the value of the average_listing_price column
 rental_price = df.loc[df['RegionName'] == int(zip_code)]['9/30/2022'].iloc[0]
 
-print("Average rental price as of 10/31/2022: ", f"{(rental_price):,.2f}")
+print("Average rental price: ", f"{(rental_price):,.2f}")
 
 #profit calculator
 profit = rental_price - mortgage_calculator(house_listing_price)
