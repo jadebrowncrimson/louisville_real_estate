@@ -1,12 +1,12 @@
 # louisville_real_estate
 
 ## Datasets
-Owned homes data by zip code: https://www.realtor.com/research/data/
-    A csv created by Realtor.com (a website similar to Zillow where you can search for homes and rentals) that provides housing data by zip code. This dataset is reflective of data as of 09/2022.  
+Owned homes data by zip code: https://www.realtor.com/research/data/  
+A csv created by Realtor.com (a website similar to Zillow where you can search for homes and rentals) that provides housing data by zip code. This dataset is reflective of data as of 09/2022.  
 Rental data by zip code: https://www.zillow.com/research/data/  
-    A csv created by Zillow.com (a website where you can search for homes and rental) that provides rental data by zip code. This dataset is reflective of data as of 9/30/2022.
-Mortgage calculator equation: https://www.mymove.com/mortgage/mortgage-calculation/
-    An article that breaks down how mortgages are calculated. I used this to guide how I built the mortgage calculator.
+A csv created by Zillow.com (a website where you can search for homes and rental) that provides rental data by zip code. This dataset is reflective of data as of 9/30/2022.
+Mortgage calculator equation: https://www.mymove.com/mortgage/mortgage-calculation/  
+An article that breaks down how mortgages are calculated. I used this to guide how I built the mortgage calculator.
 
 ## Intro
 In the real estate industry, there are several ways you can choose to invest. I have an interest in using real estate to build wealth, so my project features calculators, visuals, and analysis to support real estate research efforts relevant to becoming a landlord. When researching where you want to invest, of course one of the main data points you want to analyze is the potential for profit. This is what guided my project. Also, I am interested in investing in Louisville, KY, so all data & visualizations are reflective of only Louisville. Below is a list of features & descriptions of them:
