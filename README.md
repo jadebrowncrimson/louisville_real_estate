@@ -17,6 +17,9 @@ In the real estate industry, there are several ways you can choose to invest. I 
 
 ## Instructions
 You can run the files in any order. Below is a guide to how you should run each file:
+
+The first thing you will need to do is go to the Data folder and download it.
+
 1. analysis.py - gives a few datapoints that expose the major wealth gap in Louisville, KY, which is evident in pretty much any large city.
     1. Run the program (ctrl + f5).  
     2. The program will return various data points about where the most expensive and least expensive places to live and invest in are located in Louisville, KY.  

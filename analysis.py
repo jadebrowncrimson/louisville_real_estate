@@ -2,8 +2,8 @@ import pandas as pd
 from statistics import mean
 
 #data import
-df_houses = pd.read_csv('C:/Users/Jade/OneDrive - University of Louisville/Handling Business/Trainings/Code Louisville Python/Code/final_project/Data/zip_code_data_project.csv')
-df_rentals = pd.read_csv('C:/Users/Jade/OneDrive - University of Louisville/Handling Business/Trainings/Code Louisville Python/Code/final_project/Data/zip_code_data_rentals.csv')
+df_houses = pd.read_csv('Data/zip_code_data_project.csv')
+df_rentals = pd.read_csv('Data/zip_code_data_rentals.csv')
 
 #filter for Louisville houses & rentals
 df_houses = df_houses[df_houses['zip_name'].str.contains('louisville, KY')]
