@@ -5,7 +5,7 @@ import pandas as pd
 
 #HOUSING DATA
 #data import
-df = pd.read_csv('https://github.com/jadebrowncrimson/louisville_real_estate/blob/main/Data/zip_code_data_project.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/jadebrowncrimson/louisville_real_estate/main/Data/zip_code_data_project.csv')
 df.head()
 
 #filter for Louisville, KY zip codes
@@ -44,7 +44,7 @@ print("Estimated mortgage payment: ", f"{mortgage_calculator(house_listing_price
 
 #RENTAL DATA
 # import data
-df = pd.read_csv('https://github.com/jadebrowncrimson/louisville_real_estate/blob/main/Data/zip_code_data_rentals.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/jadebrowncrimson/louisville_real_estate/main/Data/zip_code_data_rentals.csv')
 df.head()
 
 # filter for Louisville, KY zip codes

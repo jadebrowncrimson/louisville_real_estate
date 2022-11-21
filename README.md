@@ -18,8 +18,6 @@ In the real estate industry, there are several ways you can choose to invest. I 
 ## Instructions
 You can run the files in any order. Below is a guide to how you should run each file:
 
-The first thing you will need to do is go to the Data folder and download it.
-
 1. analysis.py - gives a few datapoints that expose the major wealth gap in Louisville, KY, which is evident in pretty much any large city.
     1. Run the program (ctrl + f5).  
     2. The program will return various data points about where the most expensive and least expensive places to live and invest in are located in Louisville, KY.  
@@ -29,11 +27,13 @@ The first thing you will need to do is go to the Data folder and download it.
     2. Enter a zip code that is within the bounds of Louisville, KY (i.e., 40206).  
     3. The program will return various data points to help you begin to understand if this area is a good area to invest in from the perspective of a potential landlord.  
 
-3. visuals.py
+3. visuals_piechart.py
     1. Run the program (ctrl + f5)   
     2. A pie chart will pop up that shows how the average housing price in each zip code compares to the others in the grand scheme of the Louisville housing market.  
-    3. Enter a zip code that is within the bounds of Louisville, KY (i.e., 40206).  
-    4. The program will return a line chart that shows a trendline of mortgage prices from 09/2019 to 09/2022.  
+    
+4. visuals_trendline.py  
+    1. Enter a zip code that is within the bounds of Louisville, KY (i.e., 40206).  
+    2. The program will return a line chart that shows a trendline of mortgage prices from 09/2019 to 09/2022.  
 
 
 ## Analysis 
@@ -54,6 +54,7 @@ Since I have been working with data in Louisville over the past year or so, I ha
 - profit calculator (profit_calculator.py file)
 - analysis.py file
 4. Visualize data
-- visuals.py file
+- visual_piechart.py file  
+- visual_trendline.py file
 5. Interpret data
 - Interpretation section of README file
